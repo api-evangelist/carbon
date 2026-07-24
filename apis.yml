@@ -1,8 +1,25 @@
 aid: carbon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carbon.png
 name: Carbon
-description: 'Carbon is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Carbon is a digital manufacturing company that builds an integrated 3D printing platform
+  combining Digital Light Synthesis (DLS) printing hardware, advanced photopolymer resins, and cloud-connected
+  computational design software. Its technology enables production-scale additive manufacturing of end-use
+  polymer parts across automotive, medical, dental, consumer goods, and industrial applications, with the
+  Design Engine tool for lattice and part design and the Carbon Academy knowledge base for operational
+  guidance. Carbon is a frontier-tech portfolio company backed by GV. As of this profile Carbon exposes
+  no public developer API, OpenAPI specification, SDK, or event surface; enrichment is limited to verified
+  company identity and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/carbon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Frontier Tech
+- 3D Printing
+- Additive Manufacturing
+- Digital Manufacturing
+- Hardware
+- Materials Science
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carbon-domain-security.yml
 - type: Website
-  url: http://carbon3d.com
+  url: https://www.carbon3d.com
+- type: Documentation
+  url: https://learn.carbon3d.com
+- type: Support
+  url: https://www.carbon3d.com/contact
+- type: TermsOfService
+  url: https://www.carbon3d.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.carbon3d.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
